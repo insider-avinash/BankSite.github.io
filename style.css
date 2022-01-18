@@ -40,6 +40,7 @@ nav img {
   color: #fff;
   text-decoration: none;
   font-size: 13px;
+  font-weight: bold;
 }
 
 .nav-links ul li::after {
@@ -79,6 +80,7 @@ nav img {
 .btn {
   display: block;
   width: 150px;
+  /* margin-left: 70px; */
   margin-left: 550px;
   text-decoration: none;
   color: #fff;
@@ -88,6 +90,10 @@ nav img {
   background: transparent;
   position: relative;
   cursor: pointer;
+  text-align: center;
+}
+.btn-container {
+  margin-left: 580px;
 }
 
 .btn:hover {
@@ -104,9 +110,11 @@ nav .fa {
   .text-box h1 {
     font-size: 20px;
   }
-
   .nav-links ul li {
     display: block;
+  }
+  .btn {
+    margin-left: 170px;
   }
 
   .nav-links {
@@ -134,7 +142,103 @@ nav .fa {
   }
 }
 
+/* ------------calculator------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS";
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.calculator {
+  width: 400px;
+  height: 450px;
+  background-color: rgb(78, 74, 74);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 20px 0px 0px 100px;
+  border-radius: 50px;
+  color: white;
+}
+
+input {
+  padding: 7px;
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 8px;
+  margin: 18px -2px 0px 8px;
+  align-items: center;
+  border: 2px solid rgb(161, 161, 102);
+  border-radius: 10px;
+  font-weight: bold;
+}
+h2 {
+  margin: 10px;
+}
+
+.calculator-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.calculator-col {
+  flex-basis: 45%;
+  /* height: 250px; */
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.calculator-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-calculate {
+  padding: 12px;
+  background: #f44336;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 /* ---------------courses---------------------- */
+
+.sub-header-ser-1 {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(eduford_img/saving.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
 
 .course {
   width: 80%;
@@ -163,7 +267,8 @@ p {
 }
 
 .course-col {
-  flex-basis: 31%;
+  flex-basis: 45%;
+  /* height: 250px; */
   background: #fff3f3;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -182,9 +287,40 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+.btn-services {
+  display: block;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 180px;
+  /* width: 150px; */
+  /* margin-left: 70px; */
+  /* margin-left: 550px; */
+
+  text-decoration: none;
+  color: #f44336;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+}
+.btn-services:hover {
+  background-color: #f44336;
+  color: white;
+}
+
 @media (max-width: 700px) {
   .row {
     flex-direction: column;
+  }
+  .headings {
+    font-size: 25px;
+    margin-bottom: 100px;
+  }
+  .btn-services {
+    margin-left: 90px;
   }
 }
 
@@ -424,7 +560,7 @@ h3 {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(eduford_img/background.jpg);
+    url(eduford_img/saving.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
